@@ -20,6 +20,11 @@ exporters:
     region: us-west-2
 
 service:
+  telemetry:
+    logs:
+      level: "DEBUG"
+      development: true
+      encoding: "console"
   pipelines:
     traces:
       receivers: [otlp]
